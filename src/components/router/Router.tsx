@@ -11,8 +11,8 @@ const Page404Screen = lazy(() => import('~/pages/404'));
 function Layout() {
   return (
     <div className="">
-      <nav className="flex items-center fixed top-0 left-0 right-0" >
-        <div className="p-4 flex mx-auto">
+      <nav className="flex items-center fixed top-0 left-0 right-0 pt-8" >
+        <div className="px-4 flex mx-auto">
           <NavLink active>About</NavLink>
           <NavLink>Experience</NavLink>
           <NavLink>Work</NavLink>

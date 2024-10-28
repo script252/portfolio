@@ -5,14 +5,15 @@
 @layer base {         
 
   h1 {
-    @apply text-7xl font-light leading-tight text-white/75;
+    @apply text-7xl font-light leading-tight text-white/85;
     letter-spacing: 0.2em;
   }
   h2 {
-    @apply text-xl;
+    @apply text-lg leading-tight text-white/75;
+    letter-spacing: 0.2em;
   }
   h3 {
-    @apply text-lg font-light leading-tight text-white/35;
+    @apply text-lg font-light leading-tight text-white/45;
     letter-spacing: 0.2em;
     padding-right: 1em;
   }
