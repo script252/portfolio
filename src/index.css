@@ -15,7 +15,6 @@
   h3 {
     @apply text-lg font-light leading-tight text-white/45;
     letter-spacing: 0.2em;
-    padding-right: 1em;
   }
   body {
     @apply bg-gradient-to-b from-p-grey to-p-black h-screen;

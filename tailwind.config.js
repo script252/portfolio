@@ -40,6 +40,22 @@ module.exports = {
           '900': '#706e58',
           '950': '#424136',
         },
+      },
+      keyframes: {
+        'translate-screen-up': {
+          '0%': { transform: 'translate(0vh, 0vh)', opacity: 1 },
+          '50%': { opacity: 0 },
+          '100%': { transform: 'translate(0vh, -5vh)', opacity: 0 },
+        },
+        'translate-screen-down': {
+          '0%': { transform: 'translate(0vh, 5vh)', opacity: 0 },
+          '50%': { opacity: 0 },
+          '100%': { transform: 'translate(0vh, 0vh)', opacity: 1 },
+        }
+      },
+      animation: {
+          'transition-out': 'translate-screen-up 0.25s ease-in 1',
+          'transition-in': 'translate-screen-down 0.25s ease-in 1',
       }
     }
   },

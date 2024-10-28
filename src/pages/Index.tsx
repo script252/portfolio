@@ -6,12 +6,12 @@ function Index() {
     <>
       <Head title="Andrew Closson" />
       
-      <div className="hero min-h-screen">
-        <div className="hero-content flex-col lg:flex-row-reverse pb-20">
+      <div className="hero">
+        <div className="hero-content flex-col lg:flex-row-reverse">
           <img src='assets/Logo.svg'/>
           <div>
           <h1 className="text-right">Andrew Closson</h1>
-            <h3 className="text-right pb-6">
+            <h3 className="text-right pb-6 pr-4">
               A senior software engineer focused<br/> on front-end development
             </h3>
           </div>
