@@ -8,6 +8,7 @@ export function NavMenu() {
           <NavMenuLink href="/">About</NavMenuLink>
           <NavMenuLink href="/experience">Experience</NavMenuLink>
           <NavMenuLink href="/work">Work</NavMenuLink>
+          <NavMenuLink href="/personal">Personal</NavMenuLink>
         </div>
       </nav>
     </>

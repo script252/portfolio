@@ -1,6 +1,7 @@
 import { lazy, Suspense, useEffect, useState } from 'react';
 import { Outlet, RouteObject, useRoutes, BrowserRouter, NavLink, useLocation } from 'react-router-dom';
 import { NavMenu } from '../NavMenu/NavMenu';
+import { Footer } from '../footer/Footer';
 
 type TransitionState = 'in' | 'out' | 'idle'
 
@@ -13,6 +14,7 @@ const IndexScreen = lazy(() => import('~/pages/Index'));
 const Page404Screen = lazy(() => import('~/pages/404'));
 const ExperienceScreen = lazy(() => import('~/pages/Experience'));
 const WorkScreen = lazy(() => import('~/pages/Work'));
+const PersonalScreen = lazy(() => import('~/pages/Personal'));
 
 interface LayoutProps {
   state: TransitionState,
@@ -25,18 +27,16 @@ function Layout({state, setState, currentLocation, setLocation}: LayoutProps) {
   return (
     <>
       <NavMenu />
-      <div className="min-h-screen flex m-auto justify-center items-center pb-20">
+      <div className="min-h-screen flex m-auto justify-center items-center pb-20 w-screen">
         <div
           className={` ${state === 'out' ? "animate-transition-out" : "animate-transition-in"}`}
           onTransitionEnd={() => {
-            console.log('Transition ended');
             if (state === 'out') {
               setState('in');
               setLocation(currentLocation);
             }
           }}
           onAnimationEnd={() => {
-            console.log('Animation ended');
             if (state === 'out') {
               setState('in');
               setLocation(currentLocation);
@@ -45,6 +45,7 @@ function Layout({state, setState, currentLocation, setLocation}: LayoutProps) {
         >
           <Outlet />
         </div>
+        <Footer/>
       </div>
     </>
   );
@@ -89,6 +90,10 @@ const InnerRouter = () => {
         {
           path: 'work',
           element: <WorkScreen />,
+        },
+        {
+          path: 'personal',
+          element: <PersonalScreen />,
         },
         {
           path: '*',

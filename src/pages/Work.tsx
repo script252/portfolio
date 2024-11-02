@@ -7,7 +7,7 @@ function Work() {
               <figure className="">
                 <img
                   className=""
-                  src="assets/placeholder-screenshot.jpg"
+                  src="assets/dealforce-screenshot.png"
                   alt="Screenshot" />
               </figure>
               <div className="card-body px-8 pt-8 pb-4">
