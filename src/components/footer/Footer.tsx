@@ -1,11 +1,11 @@
 export function Footer() {
   return (
     <>
-      <footer className="footer bg-p-black text-neutral-content items-center p-4 fixed bottom-0 justify-center">
+      <footer className="footer bg-transparent text-neutral-content items-center p-3 md:p-4 fixed bottom-0 left-0 right-0 justify-center gap-1 md:gap-2">
         <aside className="grid-flow-col items-center">
           <p>Copyright © Andrew Closson {new Date().getFullYear()} - All rights reserved</p>
         </aside>
-        <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+        <nav className="grid-flow-col gap-4 md:place-self-center justify-self-center md:justify-self-end">
           <a>
             <svg
               xmlns="http://www.w3.org/2000/svg"

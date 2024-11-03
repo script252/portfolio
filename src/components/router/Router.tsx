@@ -17,7 +17,6 @@ const Loading = () => (
   );
 
 const basename = import.meta.env.PUBLIC_URL || '/portfolio';
-console.log('Base name: ', basename);
 
 // const IndexScreen = lazy(() => import('~/pages/Index'));
 // const Page404Screen = lazy(() => import('~/pages/404'));
@@ -36,7 +35,7 @@ function Layout({state, setState, currentLocation, setLocation}: LayoutProps) {
   return (
     <>
       <NavMenu />
-      <div className="min-h-screen flex m-auto justify-center items-center pb-20 w-screen">
+      <div className="h-svh flex mx-auto justify-center items-center pb-20 w-screen overflow-hidden no-scrollbar">
         <div
           className={` ${state === 'out' ? "animate-transition-out" : "animate-transition-in"}`}
           onTransitionEnd={() => {
@@ -52,7 +51,9 @@ function Layout({state, setState, currentLocation, setLocation}: LayoutProps) {
             }
           }}
         >
-          <Outlet />
+          <div className="fixed left-0 right-0 top-20 bottom-20 md:relative overflow-y-scroll md:overflow-y-auto p-8 w-svh overflow-x-visible">
+            <Outlet />
+          </div>
         </div>
         <Footer/>
       </div>

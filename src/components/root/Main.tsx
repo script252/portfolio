@@ -21,7 +21,7 @@ function Main() {
   //   });
   // }, []);
   return (
-    <main>
+    <main className="">
       <Router />
     </main>
   );

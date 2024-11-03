@@ -5,8 +5,8 @@ function Work() {
     return (
       <>
         <div className="px-0 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            <div className="card bg-p-metal-900 rounded-none w-full lg:w-90 xl:w-96">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="card bg-p-metal-900 rounded-none w-90 sm:w-90 lg:w-90 xl:w-96">
               <figure className="">
                 <img
                   className=""
@@ -22,7 +22,7 @@ function Work() {
                 </div>
               </div>
             </div>
-            <div className="card bg-p-metal-900 rounded-none w-full lg:w-90 xl:w-96">
+            <div className="card bg-p-metal-900 rounded-none w-90 sm:w-90 lg:w-90 xl:w-96">
               <figure>
                 <img
                   src={placeholderScreenshot}
@@ -36,7 +36,7 @@ function Work() {
                 </div>
               </div>
             </div>
-            <div className="card bg-p-metal-900 rounded-none w-full lg:w-90 xl:w-96">
+            <div className="card bg-p-metal-900 rounded-none w-90 sm:w-90 lg:w-90 xl:w-96">
               <figure>
                 <img
                   src={placeholderScreenshot}
