@@ -1,5 +1,7 @@
+import { Link } from 'react-router-dom';
 import dealforceScreenshot from '../../assets/dealforce-screenshot.png';
 import placeholderScreenshot from '../../assets/placeholder-screenshot.jpg';
+import { LinkIcon } from '@heroicons/react/24/solid';
 
 function Work() {
     return (
@@ -14,7 +16,7 @@ function Work() {
                   alt="Screenshot" />
               </figure>
               <div className="card-body px-8 pt-8 pb-4">
-                <h2 className="card-title text-p-tan-light-700">Dealforce</h2>
+                <Link to="https://www.dealforce.com" target="_blank"><h2 className="card-title text-p-tan-light-700">Dealforce<LinkIcon width={24}/></h2></Link>
                 <p>A marketplace app to shop for businesses.</p>
                 <div className="card-actions justify-end">
                 <div className="badge pt-1 text-p-tan-light-700 bg-p-tan-light-950">React</div>
