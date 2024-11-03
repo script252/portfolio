@@ -1,3 +1,6 @@
+import dealforceScreenshot from '../../assets/dealforce-screenshot.png';
+import placeholderScreenshot from '../../assets/placeholder-screenshot.jpg';
+
 function Work() {
     return (
       <>
@@ -7,7 +10,7 @@ function Work() {
               <figure className="">
                 <img
                   className=""
-                  src="assets/dealforce-screenshot.png"
+                  src={dealforceScreenshot}
                   alt="Screenshot" />
               </figure>
               <div className="card-body px-8 pt-8 pb-4">
@@ -22,7 +25,7 @@ function Work() {
             <div className="card bg-p-metal-900 rounded-none w-full lg:w-90 xl:w-96">
               <figure>
                 <img
-                  src="assets/placeholder-screenshot.jpg"
+                  src={placeholderScreenshot}
                   alt="Screenshot" />
               </figure>
               <div className="card-body px-8 pt-8 pb-4">
@@ -36,7 +39,7 @@ function Work() {
             <div className="card bg-p-metal-900 rounded-none w-full lg:w-90 xl:w-96">
               <figure>
                 <img
-                  src="assets/placeholder-screenshot.jpg"
+                  src={placeholderScreenshot}
                   alt="Screenshot" />
               </figure>
               <div className="card-body px-8 pt-8 pb-4">

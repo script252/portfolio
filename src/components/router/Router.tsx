@@ -1,7 +1,13 @@
 import { lazy, Suspense, useEffect, useState } from 'react';
-import { Outlet, RouteObject, useRoutes, BrowserRouter, NavLink, useLocation } from 'react-router-dom';
+import { Outlet, RouteObject, useRoutes, BrowserRouter, NavLink, useLocation, useSearchParams, useNavigation } from 'react-router-dom';
 import { NavMenu } from '../NavMenu/NavMenu';
 import { Footer } from '../footer/Footer';
+
+import Index from '../../pages/Index';
+import Page404 from '../../pages/404';
+import Experience from '../../pages/Experience';
+import Work from '../../pages/Work';
+import Personal from '../../pages/Personal';
 
 type TransitionState = 'in' | 'out' | 'idle'
 
@@ -10,11 +16,14 @@ const Loading = () => (
     <div className="loading loading-infinity loading-lg p-4 text-center"/>
   );
 
-const IndexScreen = lazy(() => import('~/pages/Index'));
-const Page404Screen = lazy(() => import('~/pages/404'));
-const ExperienceScreen = lazy(() => import('~/pages/Experience'));
-const WorkScreen = lazy(() => import('~/pages/Work'));
-const PersonalScreen = lazy(() => import('~/pages/Personal'));
+const basename = import.meta.env.PUBLIC_URL || '/portfolio';
+console.log('Base name: ', basename);
+
+// const IndexScreen = lazy(() => import('~/pages/Index'));
+// const Page404Screen = lazy(() => import('~/pages/404'));
+// const ExperienceScreen = lazy(() => import('~/pages/Experience'));
+// const WorkScreen = lazy(() => import('~/pages/Work'));
+// const PersonalScreen = lazy(() => import('~/pages/Personal'));
 
 interface LayoutProps {
   state: TransitionState,
@@ -53,7 +62,7 @@ function Layout({state, setState, currentLocation, setLocation}: LayoutProps) {
 
 export const Router = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={`${basename}`}>
       <InnerRouter />
     </BrowserRouter>
   );
@@ -81,23 +90,27 @@ const InnerRouter = () => {
       children: [
         {
           index: true,
-          element: <IndexScreen />,
+          element: <Index />,
+        },
+        {
+          path: 'about',
+          element: <Index />,
         },
         {
           path: 'experience',
-          element: <ExperienceScreen />,
+          element: <Experience />,
         },
         {
           path: 'work',
-          element: <WorkScreen />,
+          element: <Work />,
         },
         {
           path: 'personal',
-          element: <PersonalScreen />,
+          element: <Personal />,
         },
         {
           path: '*',
-          element: <Page404Screen />,
+          element: <Page404 />,
         },
         {
           path: 'loading',
@@ -106,6 +119,9 @@ const InnerRouter = () => {
       ],
     },
   ];
+
+  
+
   const element = useRoutes(routes, currentLocation);
   return (
     <div>

@@ -1,5 +1,7 @@
 import { Head } from '~/components/shared/Head';
 
+import logo from '../../assets/logo.svg';
+
 function Index() {
 
   return (
@@ -8,7 +10,7 @@ function Index() {
       
       <div className="hero">
         <div className="hero-content flex-col lg:flex-row-reverse">
-          <img src='assets/Logo.svg'/>
+          <img src={logo}/>
           <div>
           <h1 className="text-right">Andrew Closson</h1>
             <h3 className="text-right pb-6 pr-4">
