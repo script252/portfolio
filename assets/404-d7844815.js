@@ -1,1 +1,0 @@
-import{j as e}from"./index-c8cf618c.js";import{H as s}from"./Head-96af889d.js";function n(){return e.jsxs(e.Fragment,{children:[e.jsx(s,{title:"The page is not found"}),e.jsxs("div",{className:"flex flex-col items-center",children:[e.jsx("h1",{children:"404"}),e.jsx("h3",{children:"Not found"})]})]})}export{n as default};
