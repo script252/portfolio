@@ -51,7 +51,7 @@ function Layout({state, setState, currentLocation, setLocation}: LayoutProps) {
             }
           }}
         >
-          <div className="fixed left-0 right-0 top-20 bottom-20 md:relative overflow-y-scroll md:overflow-y-auto p-8 w-svh overflow-x-visible">
+          <div className="fixed left-0 right-0 top-12 bottom-20 md:relative overflow-y-auto p-2 md:p-8 w-svh overflow-x-visible z-0">
             <Outlet />
           </div>
         </div>
