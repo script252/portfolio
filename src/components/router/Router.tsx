@@ -36,22 +36,23 @@ function Layout({state, setState, currentLocation, setLocation}: LayoutProps) {
     <>
       <NavMenu />
       <div className="h-svh flex mx-auto justify-center items-center pb-20 w-screen overflow-hidden no-scrollbar">
-        <div
-          className={` ${state === 'out' ? "animate-transition-out" : "animate-transition-in"}`}
-          onTransitionEnd={() => {
-            if (state === 'out') {
-              setState('in');
-              setLocation(currentLocation);
-            }
-          }}
-          onAnimationEnd={() => {
-            if (state === 'out') {
-              setState('in');
-              setLocation(currentLocation);
-            }
-          }}
-        >
-          <div className="fixed left-0 right-0 top-12 bottom-20 md:relative overflow-y-auto p-2 md:p-8 w-svh overflow-x-visible z-0">
+        <div className="fixed left-0 right-0 top-12 bottom-20 md:relative overflow-y-auto sm:no-scrollbar p-2 md:p-8 w-svh overflow-x-visible z-0">
+          <div
+            className={` ${state === 'out' ? "animate-transition-out" : "animate-transition-in"}`}
+            onTransitionEnd={() => {
+              if (state === 'out') {
+                setState('in');
+                setLocation(currentLocation);
+              }
+            }}
+            onAnimationEnd={() => {
+              if (state === 'out') {
+                setState('in');
+                setLocation(currentLocation);
+              }
+            }}
+          >
+          
             <Outlet />
           </div>
         </div>
