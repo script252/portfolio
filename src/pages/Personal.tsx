@@ -14,7 +14,7 @@ function Personal() {
                   src={scatterbrainsScreenshot}
                   alt="Screenshot" />
               </figure>
-              <div className="card-body px-8 pt-8 pb-4">
+              <div className="card-body px-8 pt-8 pb-4 shadow-2xl">
                 <Link to="http://script252.github.io/scatterbrains" target="_blank"><h2 className="card-title text-p-tan-light-700">Scatterbrains<LinkIcon width={24}/></h2></Link>
                 <p>Sudoku, a word finding game, and a memory game. Just for fun.</p>
                 <div className="card-actions justify-end">

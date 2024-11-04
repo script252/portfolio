@@ -5,7 +5,7 @@
 @layer base {         
 
   h1 {
-    @apply text-3xl lg:text-7xl font-light leading-tight text-white/85;
+    @apply text-3xl lg:text-7xl font-light leading-tight text-white/90;
     letter-spacing: 0.2em;
   }
   h2 {
@@ -13,11 +13,11 @@
     letter-spacing: 0.2em;
   }
   h3 {
-    @apply text-sm lg:text-lg font-light leading-tight text-white/45;
+    @apply text-sm lg:text-lg font-light leading-tight text-white/65;
     letter-spacing: 0.2em;
   }
   html {
-    @apply bg-gradient-to-b from-p-grey to-p-black h-screen;
+    @apply bg-gradient-to-b from-p-grey to-p-metal-950 h-screen;
   }
 }
 

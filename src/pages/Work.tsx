@@ -15,7 +15,7 @@ function Work() {
                   src={dealforceScreenshot}
                   alt="Screenshot" />
               </figure>
-              <div className="card-body px-8 pt-8 pb-4">
+              <div className="card-body px-8 pt-8 pb-4 shadow-2xl">
                 <Link to="https://www.dealforce.com" target="_blank"><h2 className="card-title text-p-tan-light-700">Dealforce<LinkIcon width={24}/></h2></Link>
                 <p>A marketplace app to shop for businesses.</p>
                 <div className="card-actions justify-end">
@@ -30,7 +30,7 @@ function Work() {
                   src={placeholderScreenshot}
                   alt="Screenshot" />
               </figure>
-              <div className="card-body px-8 pt-8 pb-4">
+              <div className="card-body px-8 pt-8 pb-4 shadow-2xl">
                 <h2 className="card-title text-p-tan-light-700">Hero</h2>
                 <p>Internal safety incident reporting tool created for Johns Hopkins.</p>
                 <div className="card-actions justify-end">
@@ -44,7 +44,7 @@ function Work() {
                   src={placeholderScreenshot}
                   alt="Screenshot" />
               </figure>
-              <div className="card-body px-8 pt-8 pb-4">
+              <div className="card-body px-8 pt-8 pb-4 shadow-2xl">
                 <h2 className="card-title text-p-tan-light-700">CAMS</h2>
                 <p className="">Internal administration tool created for Crash Champions.</p>
                 <div className="card-actions justify-end pt-4">

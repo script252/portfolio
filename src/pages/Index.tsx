@@ -10,7 +10,7 @@ function Index() {
       <div className="flex items-center">
       <div className="hero">
         <div className="hero-content flex-col xl:flex-row-reverse">
-          <div className="w-1/2 xl:w-auto"><img src={logo}/></div>
+          <div className="w-1/2 xl:w-auto"><img src={logo} className="drop-shadow-xl"/></div>
           <div>
             <h1 className="text-center xl:text-right pb-6 xl:pb-unset">Andrew Closson</h1>
             <h3 className="text-center xl:text-right pb-6 pr-0 xl:pr-4">

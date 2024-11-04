@@ -21,7 +21,7 @@ export function NavMenu() {
       </nav>
       <nav className="visible md:hidden flex items-center fixed top-0 left-0 right-0 py-0 justify-end z-10" >
         <details className="dropdown dropdown-bottom" ref={menuRef}>
-          <summary tabIndex={0} role="button" className="btn bg-p-metal-950 text-white/50 rounded-none w-screen border-0 no-animation flex flex-row justify-start hover:bg-p-tan-light-950">
+          <summary tabIndex={0} role="button" className="btn bg-p-metal-800 text-white/75 rounded-none w-screen border-0 no-animation flex flex-row justify-start active:bg-p-metal-700">
             <div className="w-6"><Bars3Icon/></div>
           </summary>
           <ul tabIndex={0} className="dropdown-content menu bg-p-metal-950 z-10 p-0 [&_li>*]:rounded-none w-screen">
