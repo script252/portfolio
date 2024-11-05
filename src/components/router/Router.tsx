@@ -1,7 +1,7 @@
 import { lazy, Suspense, useEffect, useState } from 'react';
 import { Outlet, RouteObject, useRoutes, BrowserRouter, NavLink, useLocation, useSearchParams, useNavigation } from 'react-router-dom';
 import { NavMenu } from '../NavMenu/NavMenu';
-import { Footer } from '../footer/Footer';
+import { Footer } from '../Footer/Footer';
 
 import Index from '../../pages/Index';
 import Page404 from '../../pages/404';
@@ -35,7 +35,7 @@ function Layout({state, setState, currentLocation, setLocation}: LayoutProps) {
   return (
     <>
       <NavMenu />
-      <div className="h-svh flex mx-auto justify-center items-center pb-20 w-screen overflow-hidden no-scrollbar">
+      <div className="h-svh flex mx-auto justify-center items-center pb-28 w-screen overflow-hidden no-scrollbar">
         <div className="fixed left-0 right-0 top-12 bottom-20 md:relative overflow-y-auto sm:no-scrollbar p-2 md:p-8 w-svh overflow-x-visible z-0">
           <div
             className={` ${state === 'out' ? "animate-transition-out" : "animate-transition-in"}`}
