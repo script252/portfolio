@@ -16,7 +16,7 @@ const Loading = () => (
     <div className="loading loading-infinity loading-lg p-4 text-center"/>
   );
 
-const basename = import.meta.env.PUBLIC_URL || '/portfolio';
+const basename = import.meta.env.PUBLIC_URL || '';
 
 // const IndexScreen = lazy(() => import('~/pages/Index'));
 // const Page404Screen = lazy(() => import('~/pages/404'));

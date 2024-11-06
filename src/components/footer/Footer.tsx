@@ -15,7 +15,7 @@ export function Footer() {
             <Link to="https://www.linkedin.com/in/andrew-closson/" target="_blank"><IoLogoLinkedin size="24"/></Link>
           </a>
           <a>
-            <Link to="mailto:andrewdavidclosson@gmail.com" target="_blank"><IoMdMail size="24"/></Link>
+            <Link to="mailto:andrew@clossoncodes.com" target="_blank"><IoMdMail size="24"/></Link>
           </a>
           <a>
             <Link to="https://github.com/script252" target="_blank"><IoLogoOctocat size="24"/></Link>
